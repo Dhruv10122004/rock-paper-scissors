@@ -28,6 +28,9 @@ function playRound(humanChoice, computerChoice) {
         console.log("You won! "+humanChoice+" beats "+computerChoice);
         humanScore++;
     }
+    else if((humanChoice == "rock" && computerChoice == "rock") || (humanChoice == "paper" && computerChoice == "paper") || (humanChoice == "scissors" && computerChoice == "scissors")) {
+        console.log("It was a tie");
+    }
     else {
         console.log("You lose! "+computerChoice+" beats "+humanChoice);
         computerScore++;
